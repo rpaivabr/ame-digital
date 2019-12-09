@@ -1,2 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://www.amedigital.com/tema/css/app.e950e024d447bb3a6798.css");
+
+:root,
+.theme-light {
+  --lns-color-body: var(--lns-themeLight-color-body);
+  --lns-color-bodyDimmed: var(--lns-themeLight-color-bodyDimmed);
+  --lns-color-background: var(--lns-themeLight-color-background);
+  --lns-color-overlay: var(--lns-themeLight-color-overlay);
+  --lns-color-primary: var(--lns-themeLight-color-primary);
+  --lns-color-focusRing: var(--lns-themeLight-color-focusRing);
+  --lns-color-border: var(--lns-themeLight-color-border);
+  --lns-color-disabledContent: var(--lns-themeLight-color-disabledContent);
+  --lns-color-disabledBackground: var(--lns-themeLight-color-disabledBackground);
+  --lns-color-backdrop: var(--lns-themeLight-color-backdrop);
+  --lns-color-formFieldBorder: var(--lns-themeLight-color-formFieldBorder);
+  --lns-color-formFieldBackground: var(--lns-themeLight-color-formFieldBackground);
+}
+
+.theme-dark {
+  --lns-color-body: var(--lns-themeDark-color-body);
+  --lns-color-bodyDimmed: var(--lns-themeDark-color-bodyDimmed);
+  --lns-color-background: var(--lns-themeDark-color-background);
+  --lns-color-overlay: var(--lns-themeDark-color-overlay);
+  --lns-color-primary: var(--lns-themeDark-color-primary);
+  --lns-color-focusRing: var(--lns-themeDark-color-focusRing);
+  --lns-color-border: var(--lns-themeDark-color-border);
+  --lns-color-disabledContent: var(--lns-themeDark-color-disabledContent);
+  --lns-color-disabledBackground: var(--lns-themeDark-color-disabledBackground);
+  --lns-color-backdrop: var(--lns-themeDark-color-backdrop);
+  --lns-color-formFieldBorder: var(--lns-themeDark-color-formFieldBorder);
+  --lns-color-formFieldBackground: var(--lns-themeDark-color-formFieldBackground);
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Inter-Loom";
+
+  src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Inter-Loom";
+
+  src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Inter-Loom";
+
+  src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Inter-Loom";
+
+  src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Inter-Loom";
+
+  src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: italic;
+  font-family: "Inter-Loom";
+
+  src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 900;
+  font-style: normal;
+  font-family: "Inter-Loom";
+
+  src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Inter-Loom";
+
+  src: url("https://cdn.loom.com/assets/fonts/inter/Inter-UI-BlackItalic.woff2") format("woff2");
+}
+
+router-outlet + * {
+    width: 100%;
+}
+
+// bugfix imagem lojas parceiras
+.ame-parceiros__image--big{
+    background-repeat: no-repeat;
+}
